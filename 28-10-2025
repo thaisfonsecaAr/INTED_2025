@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNmNjnGEkeQ4LL+8LxerY3j",
+      "authorship_tag": "ABX9TyMpe4aZIkup3Q3out1eALQI",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -157,9 +157,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "4MH-faiZo1Nq",
-        "outputId": "5f3f5786-8b1c-4f15-945b-1ca4c22242b0"
+        "outputId": "8e5f9cbc-d45b-4d91-e960-dc8f30be788c"
       },
-      "execution_count": null,
+      "execution_count": 3,
       "outputs": [
         {
           "output_type": "stream",
@@ -350,16 +350,16 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "8201ab91-1227-408b-954c-bcd4352a6a7c"
+        "outputId": "839d72b9-9f86-4793-b92f-905e6a6e5429"
       },
-      "execution_count": null,
+      "execution_count": 7,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "digite o ano 2008\n",
-            "é bissexto\n"
+            "digite o ano 20222\n",
+            "não é bissexto\n"
           ]
         }
       ]
@@ -368,13 +368,32 @@
       "cell_type": "code",
       "source": [
         "#10\n",
-        "horas = float (input)"
+        "qtde_trab = int(input('digite as horas trabalhadas: '))\n",
+        "valor_hora = float(input('digite o valor: '))\n",
+        "if qtde_trab <= 40:\n",
+        "  print('R$',qtde_trab * valor_hora)\n",
+        "else:\n",
+        "  print('R$',(qtde_trab * valor_hora)+ ((qtde-trab-40) * valor_hora * 1.5))\n"
       ],
       "metadata": {
-        "id": "MgrYbh2Dzrl6"
+        "id": "MgrYbh2Dzrl6",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f423659b-d520-4a97-a0bb-75f0cb2c1842"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite as horas trabalhadas: 40\n",
+            "digite o valor:  10\n",
+            "R$ 400.0\n"
+          ]
+        }
+      ]
     }
   ]
 }
